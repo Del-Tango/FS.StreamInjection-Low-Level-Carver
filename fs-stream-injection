@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Regards, the Alveare Solutions society.
+#
+./scripts/fs-stream-injection.sh conf/fs-stream-injection.conf
