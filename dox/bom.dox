@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Excellent Regards, the Alveare Solutions #!/Society -x
+#
+# File System Stream Injection - Action Bills of Materials
+
+cat <<EOF
+
+fssivtsi     ,Stream Injection           ,(*) -> (1) + n
+fssivtssof   ,Set Safety OFF             ,(*) -> (2) -> (1  + y)
+fssivtsson   ,Set Safety ON              ,(*) -> (2) -> (2  + y)
+fssivtsbd    ,Set Block Device           ,(*) -> (2) -> (3  + <dev-path>)
+fssivtsbs    ,Set Block Size             ,(*) -> (2) -> (4  + <bytes>)
+fssivtsisn   ,Set Initial Sector Number  ,(*) -> (2) -> (5  + <sector>)
+fssivtstf    ,Set Temporary File         ,(*) -> (2) -> (6  + <file-path>)
+fssivtcso    ,Compute Sectors Occupied   ,(*) -> (2) -> (7)
+fssivtidff   ,Import Data From File      ,(*) -> (2) -> (8  + <file-path>)
+fssivtedm    ,Edit Data Manually         ,(*) -> (2) -> (9  + <data>)
+fssivtid     ,Install Dependencies       ,(*) -> (2) -> (10 + y)
+
+EOF
+
+exit $?
